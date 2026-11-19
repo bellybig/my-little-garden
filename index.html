@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bryan Johnston — My Little Garden</title>
+    <meta
+      name="description"
+      content="Personal site of Bryan Johnston, Product manager. A small garden of notes, links, and work in progress."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Karla:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <div class="blob blob-c"></div>
+      <svg class="vine" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+        <path
+          class="vine-path"
+          d="M-20 420 C 120 380, 180 520, 320 460 S 480 320, 620 380 S 760 520, 820 440"
+          fill="none"
+        />
+        <path
+          class="vine-path vine-path-soft"
+          d="M-40 180 C 80 220, 200 80, 340 140 S 520 260, 680 180 S 780 60, 860 120"
+          fill="none"
+        />
+      </svg>
+    </div>
+
+    <header class="hero">
+      <p class="site-mark">My Little Garden</p>
+      <h1 class="brand">Bryan Johnston</h1>
+      <p class="role">Product manager</p>
+      <p class="lede">
+        A quiet corner for who I am and how to find me — tended lightly, updated when something’s ready to plant.
+      </p>
+      <p class="cta-row">
+        <a class="cta" href="#about">About</a>
+        <a class="cta cta-ghost" href="#connect">Connect</a>
+      </p>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          <!-- Edit this paragraph anytime — keep it short and honest. -->
+          I work as a product manager: clarifying problems, shaping priorities, and helping teams ship
+          things people actually use. This site is intentionally small — a personal garden, not a portfolio
+          warehouse.
+        </p>
+        <p class="placeholder">
+          [Placeholder: add a sentence about focus areas, current projects, or the city you work from.]
+        </p>
+      </section>
+
+      <section id="connect" class="section">
+        <h2>Connect</h2>
+        <p>Links below are editable in <code>index.html</code>. Replace placeholders with real URLs when ready.</p>
+        <ul class="link-list">
+          <li>
+            <a href="mailto:bryan@example.com">Email</a>
+            <span class="hint">[Placeholder: bryan@example.com]</span>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <span class="hint">[Placeholder: your LinkedIn profile URL]</span>
+          </li>
+          <li>
+            <a href="https://github.com/bellybig">GitHub</a>
+            <span class="hint">bellybig</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Bryan Johnston · Hosted on GitHub Pages</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
